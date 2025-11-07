@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeetime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Coffeetime Loungebar</h1>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li> <a href="#">Home </a></li>
+            <li> <a href="#">Servizi </a></li>
+            <li> <a href="#">Chi siamo </a></li>
+            <li> <a href="#">Contatti </a></li>
+        </ul>
+        <button class="menu-btn" id="menu-btn">Menu</button>
+    </nav>
+</header>
+
+<main>
+    <section class="intro"> 
+    <h2>Benvenuti sul nostro sito</h2>
+    <p>Questo è il portfolio dei nostri progetti</p>
+    <button class="contact-btn">Contattaci!</button>
+    </section>
+
+    <section class="projects">
+        <div class="project">
+            <img src="IMG_4416.jpeg" alt="Progetto 1">
+            <h3>Caffetteria</h3>
+            <p>Descrizione progetto</p>
+        </div>
+        <div class="project">
+            <img src="IMG_0275.jpeg" alt="Progetto 2">
+            <h3>Drink</h3>
+            <p>Descrizione progetto</p>
+        </div>
+        <div class="project">
+            <img src="IMG_3931.jpeg" alt="Progetto 3">
+            <h3>Zeppoleria</h3>
+            <p>Descrizione progetto</p>
+        </div>
+            <div class="project">
+            <img src="IMG_0905.jpeg" alt="Progetto 4">
+            <h3>Schiacciate</h3>
+            <p>Descrizione progetto</p>
+        </div>
+    </section>
+</main>
+    
+<footer>
+    <p>2025 Coffeetime Loungebar</p>
+</footer>
+
+<aside id="sidebar" class="sidebar">
+  <button id="close-menu" class="close-menu">Chiudi Menu</button>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Servizi</a></li>
+    <li><a href="#">Chi Siamo</a></li>
+    <li><a href="#">Contatti</a></li>
+  </ul>
+</aside>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const sidebar = document.getElementById('sidebar');
+    const closeMenu = document.getElementById('close-menu');
+
+    menuBtn.addEventListener('click', () => {
+        sidebar.classList.add('open');
+    });
+
+    closeMenu.addEventListener('click', () => {
+        sidebar.classList.remove('open');
+    });
+</script>
+
+</body>
+</html>
