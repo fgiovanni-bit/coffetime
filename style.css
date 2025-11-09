@@ -85,7 +85,7 @@ header{
     transition: transform 0.5s ease;
 }
 
-.project: :hover img{
+.project :hover img{
     transform: scale(1.1);
 }
 
@@ -112,7 +112,7 @@ footer{
     z-index: 10;
 }
 
--sidebar.open{
+.sidebar.open{
     left: 0;
 }
 
